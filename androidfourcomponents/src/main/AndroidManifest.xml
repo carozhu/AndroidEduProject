@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.caro.edu.androidfourcomponents">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--MainActivity被创建之后,若要显示,必须被注册,否则程序会提示找不到相应的窗口-->
+        <activity
+            android:name=".MainActivity">
+            <intent-filter>
+                <!--指明MainActivity是程序的主要的一个界面-->
+                <action android:name="android.intent.action.MAIN" />
+                <!--指明程序打开的第一个界面-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!--MainActivity被创建之后,若要显示,必须被注册,否则程序会提示找不到相应的窗口-->
+        <activity
+            android:name=".MainActivity02">
+        </activity>
+
+    </application>
+
+</manifest>
